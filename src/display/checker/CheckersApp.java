@@ -86,7 +86,7 @@ public class CheckersApp<T> extends Application {
 
                 }
                 if (x0 - j >= 0 && y0 + j <= WIDTH && board[x0 - j][y0 + j].hasChecker()) {
-                        return true;
+                    return true;
                 }
                 if (x0 + j >= 0 && y0 - j <= WIDTH && board[x0 + j][y0 - j].hasChecker()) {
                     return true;
@@ -109,7 +109,7 @@ public class CheckersApp<T> extends Application {
         return false;
     }
 
-    private boolean endOfGame(CheckerType type) {
+    public boolean endOfGame(CheckerType type) {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (board[i][j].hasChecker() && board[i][j].getChecker().getType() != type) {
