@@ -23,7 +23,7 @@ public class Checker extends StackPane {
     }
 
     public void setKing() {
-        this.isKing = true;
+        this.isKing = false; //true (
     }
 
     public CheckerType getType() {
